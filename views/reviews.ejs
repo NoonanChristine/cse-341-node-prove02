@@ -1,0 +1,33 @@
+<%- include('includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/nav.css">
+</head>
+<%- include('includes/nav.ejs') %>
+
+<body>
+    <div class="reviews">
+        <% if (reviews.length > 0) { %>
+                    <% for (let review of reviews) { %>
+                        <div class="review">
+                            <h1 class="h-one">Review by: 
+                                <%= review.reviewer %> 
+                            </h1>
+                            <ul class="review">
+                                <li class="book"> Book: 
+                                    <%= review.book %>
+                                </li>
+                                <li class="book"> Author:
+                                    <%= review.author %> 
+                                </li>
+                                <li class="book"> Review:
+                                    <%= review.review %>  
+                                </li>
+                            </ul>
+                        </div>
+                    <% } %>
+        <% } else { %>
+            <h1>No Reviews Found</h1>
+        <% } %>
+    </div>
+
+<%-include('includes/end.ejs') %>

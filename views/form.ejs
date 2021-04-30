@@ -1,0 +1,33 @@
+<%- include('includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/nav.css">
+</head>
+
+<%- include('includes/nav.ejs') %>
+
+<body>
+
+<div class="main-content">
+
+    <h1>Book Review</h1>
+    <p>A place to share your thoughts about a book you have read</p>
+
+    <form action="/add-review" method="POST">
+        <label for="reviewer">Reviewed By:</label><br>
+        <input type="text" id="reviewer" name="reviewer" placeholder="reviewer"><br><br>
+        
+        <label for="book">Book Title:</label><br>
+        <input type="text" id="book" name="book" placeholder="Title"><br><br>
+
+        <label for="author">Author:</label><br>
+        <input type="text" id="author" name="author" placeholder="Author"><br><br>
+        
+        <label for="review">Review:</label><br>
+        <textarea name="review" id="review" placeholder="Review"></textarea><br><br>
+
+        <input class="button" type="submit" value="Submit Review">
+    </form>   
+
+</div>
+ 
+<%-include('includes/end.ejs') %>

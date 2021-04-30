@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Roboto+Slab:wght@600&display=swap');
+
+h1 {
+    color: green;
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+.main-content {
+    background-color: lightgray;
+    padding: 15px;
+}
+
+body {
+    background-image: url('library.jpg');
+}
+
+input {
+    height: 25px;
+    width: 370px;
+}
+
+textarea {
+    height: 200px;
+    width: 370px;
+}
+
+.button {
+    color: green;
+    font-weight: 700;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    margin-bottom: 25px;
+}
+
+.book {
+    color: black;
+}
+
+.review {
+    background-color: lightgray;
+    height: 100px;
+    margin-bottom: 100px;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.reviews {
+    float: left;
+    width: 50%;
+}
+
+.h-one {
+    margin-left: 15px;
+}
