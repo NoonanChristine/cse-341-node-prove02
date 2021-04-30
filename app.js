@@ -1,5 +1,5 @@
 const path = require('path');
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
@@ -14,8 +14,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/reviews', reviewRoutes.routes);
 app.use('/', reviewRoutes.routes);
-
-app.use('/', reviewRoutes.routes);
+//app.use('/', reviewRoutes.routes);
 
 app.use((req, res, next) => {
     res.status(404).render('404', {pageTitle: 'Page Not Found'});
